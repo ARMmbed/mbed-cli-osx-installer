@@ -8,10 +8,26 @@ Usage:
 from setuptools import setup
 
 APP = ['run-mbed-cli.py']
+APP_NAME = "MBED CLI"
 DATA_FILES = []
-OPTIONS = {}
+OPTIONS = {
+    'argv_emulation': True,
+    # 'iconfile': 'app.icns', # TODO: add icon file
+    'packages':['mbed-cli','mbed-ls','mbed-greentea','mbed-host-tests'],
+    'plist': {
+        'CFBundleName': APP_NAME,
+        'CFBundleDisplayName': APP_NAME,
+        'CFBundleGetInfoString': "Run MBED CLI",
+        'CFBundleIdentifier': "com.armmbed.osx.mbed-cli",
+        'CFBundleVersion': "0.0.1",
+        'CFBundleShortVersionString': "0.0.1",
+        'NSHumanReadableCopyright': u"Copyright 2018 arm MBED All Rights Reserved"
+    }
+}
+
 
 setup(
+	name=APP_NAME,
     app=APP,
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
