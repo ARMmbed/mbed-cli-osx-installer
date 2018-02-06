@@ -9,17 +9,26 @@ Included in the installer is the latest stable version of all tools required to 
 - mbed-host-tests
 - any other relevant mbed python utilities
 
-#How to use
+## How to use
 Download the .dmg file, open it. Copy the app to your applications folder. Run application from your applications folder. 
 
-# How does it work
+## How does it work
 When you run the app a Terminal is opened with modified local session variables that link to the versions of python, gcc compiler and mbed tools included in the installer.
 
-# Why?
+## Why?
 Because we want something that 'just works' for users in a consistent, reproducable way.
 
-# But I like installing my tools myself
+## But I like installing my tools myself
 Cool, you can do that too. See the instructions [here](TODO) for how to install all the tools individually on your system.
 
 ## Whats next? 
 Go build awesome.  
+
+
+--------
+
+# How to Build
+1) Update all dependencies in repo (GCC, Python Eggs, ...etc)
+2) Run the command 'python setup.py py2app'
+3) The app is now in `dist/run-mbed-cli.app`
+
