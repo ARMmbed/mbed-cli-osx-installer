@@ -9,11 +9,11 @@ from setuptools import setup
 
 APP = ['run-mbed-cli.py']
 APP_NAME = "MBED CLI"
-DATA_FILES = []
+DATA_FILES = ['run-mbed-cli.sh']
 OPTIONS = {
     'argv_emulation': True,
     # 'iconfile': 'app.icns', # TODO: add icon file
-    'packages':['mbed-cli','mbed-ls','mbed-greentea','mbed-host-tests'],
+    # 'packages':['mbed-cli','mbed-ls','mbed-greentea','mbed-host-tests'], # TODO: find out why this is breaking the final build
     'plist': {
         'CFBundleName': APP_NAME,
         'CFBundleDisplayName': APP_NAME,
@@ -31,5 +31,5 @@ setup(
     app=APP,
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
-    setup_requires=['py2app','mbed-cli'],
+    setup_requires=['py2app'],
 )
