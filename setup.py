@@ -7,9 +7,13 @@ Usage:
 
 from setuptools import setup
 
+# Config section, change this for each release
+GCC_DIR='gcc/gcc-arm-none-eabi-7-2017-q4-major'
+
+#Do not change anything below here
 APP = ['run-mbed-cli.py']
 APP_NAME = "MBED CLI"
-DATA_FILES = ['run-mbed-cli.sh']
+DATA_FILES = ['run-mbed-cli.sh',GCC_DIR]
 OPTIONS = {
     'argv_emulation': True,
     # 'iconfile': 'app.icns', # TODO: add icon file
