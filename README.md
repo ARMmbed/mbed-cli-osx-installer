@@ -29,6 +29,7 @@ Go build awesome.
 
 # How to Build
 1) Update all dependencies in repo (GCC, Python Eggs, ...etc)
+	- For compiler updates, unzip the folder into the gcc folder, then modify the setup.py and run-mbed-cli.sh files config section to trace the new path
 2) Run the command 'python setup.py py2app'
 3) The app is now in `dist/run-mbed-cli.app`
 
