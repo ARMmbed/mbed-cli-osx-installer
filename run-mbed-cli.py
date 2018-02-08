@@ -1,11 +1,11 @@
 import subprocess
 
-# open Terminal
-# subprocess.call(
-#     ["/usr/bin/open", "-W", "-n", "--fresh","-a", "/Applications/Utilities/Terminal.app"]
-#     )
-
-# call shell script that call terminal
+# open Terminal and call run-mbed-cli.sh
 subprocess.call(
-    ["/bin/sh","/Users/ausbla01/mbed/mbed-cli-osx-installer/run-mbed-cli.sh"]
+    ["/usr/bin/open", "-W", "-n", "--fresh","-a", "/Applications/Utilities/Terminal.app", "run-mbed-cli.sh"]
     )
+
+# # call shell script that calls terminal
+# subprocess.call(
+#     ["/bin/sh","/Users/ausbla01/mbed/mbed-cli-osx-installer/run-mbed-cli.sh"]
+#     )

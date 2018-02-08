@@ -8,11 +8,11 @@ Usage:
 from setuptools import setup
 
 # Config section, change this for each release
-GCC_DIR='gcc/gcc-arm-none-eabi-7-2017-q4-major'
+GCC_DIR='gcc'
 
 #Do not change anything below here
 APP = ['run-mbed-cli.py']
-APP_NAME = "MBED CLI"
+APP_NAME = "MBED_CLI"
 DATA_FILES = ['run-mbed-cli.sh',GCC_DIR]
 OPTIONS = {
     'argv_emulation': True,
