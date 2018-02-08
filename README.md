@@ -31,5 +31,13 @@ Go build awesome.
 1) Update all dependencies in repo (GCC, Python Eggs, ...etc)
 	- For compiler updates, unzip the folder into the gcc folder, then modify the setup.py and run-mbed-cli.sh files config section to trace the new path
 2) Run the command 'python setup.py py2app'
-3) The app is now in `dist/run-mbed-cli.app`
+3) The app is now in `dist/MBED_CLI.app`
+
+
+--------
+# Help, things have gone quite wrong
+Right, here are some suggestions
+1) `chmod 777 run-mbed-cli.sh` - do this because Terminal.app is finicky and this helps sometimes
+2) 
+
 
