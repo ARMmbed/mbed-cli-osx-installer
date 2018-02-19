@@ -4,7 +4,7 @@
 
 #Config Section
 GCC_PATH='gcc/gcc-arm-none-eabi-7-2017-q4-major/bin'
-PYTHON_PATH="../Contents/MacOS/"
+PYTHON_PATH="../MacOS/"
 
 
 
