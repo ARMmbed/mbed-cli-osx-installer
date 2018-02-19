@@ -4,7 +4,8 @@
 
 #Config Section
 GCC_PATH='gcc/gcc-arm-none-eabi-7-2017-q4-major/bin'
-PYTHON_PATH="../MacOS/"
+PYTHON_PATH="../MacOS"
+MBED_BINS="bin"
 
 
 
@@ -12,7 +13,7 @@ PYTHON_PATH="../MacOS/"
 # CWD=$PWD # works when run-mbed-cli.py calls this scipt directly
 CWD=$RESOURCEPATH # this is a hack to get around $PWD not directing to inside the .app
 echo "CWD is $CWD"
-MBED_CLI_PATH="$CWD/$GCC_PATH:$CWD/$PYTHON_PATH"
+MBED_CLI_PATH="$CWD/$GCC_PATH:$CWD/$PYTHON_PATH:$CWD/$MBED_BINS"
 export MBED_CLI_PATH=$MBED_CLI_PATH
 export GCC_ARM_PATH=$"$CWD/$GCC_PATH" # override for mbed-cli, ensure we overridethe user local config
 echo "MBED_CLI_PATH is $MBED_CLI_PATH"

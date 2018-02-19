@@ -30,7 +30,8 @@ Go build awesome.
 # How to Build
 1) Update all dependencies in repo (GCC, Python Eggs, ...etc)
 	- For compiler updates, unzip the folder into the gcc folder, then modify the setup.py and run-mbed-cli.sh files config section to trace the new path
-2) Run the command 'python setup.py py2app'
+	- for adding new tools like mbedls and mbed-cli that should have user available calls from the command like `$mbed` you should add them to the `bin` folder. Make sure to modify the shebang to be similar to existing aliases in the bin folder. 
+2) Run the command `sudo sh ./CreateInstaller.sh`
 3) The app is now in `dist/MBED_CLI.app`
 
 
@@ -38,6 +39,8 @@ Go build awesome.
 # Help, things have gone quite wrong
 Right, here are some suggestions
 1) `chmod 777 run-mbed-cli.sh` - do this because Terminal.app is finicky and this helps sometimes
-2) 
+2) Make sure you are building the app with non-system python. Install Python from brew or something. The following command should return false `python -c "import py2app.build_app; print py2app.build_app.is_system()"`
+3) Cannot find packages, getting an error like 'UserWarning: No package named mbed-cli' when trying to build. Solution : the site packages found by Py2app does not contain the modules. Try copying things from the Brew site-packages to your system-python site-packages. 
+
 
 
