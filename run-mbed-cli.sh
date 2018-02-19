@@ -4,13 +4,15 @@
 
 #Config Section
 GCC_PATH='gcc/gcc-arm-none-eabi-7-2017-q4-major/bin'
-
+MBED_INSTALLER_VERSION="0.0.1"
 
 ###### DO NOT TOUCH #####
 PYTHON_PATH="../MacOS"
 MBED_BINS="bin"
 
 # CWD=$PWD # works when run-mbed-cli.py calls this scipt directly
+export MBED_INSTALLER_VERSION="$MBED_INSTALLER_VERSION"
+echo "MBED installer version is $MBED_INSTALLER_VERSION"
 CWD=$RESOURCEPATH # this is a hack to get around $PWD not directing to inside the .app
 echo "CWD is $CWD"
 MBED_CLI_PATH="$CWD/$GCC_PATH:$CWD/$PYTHON_PATH:$CWD/$MBED_BINS"
