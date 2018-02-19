@@ -17,8 +17,8 @@ DATA_FILES = ['run-mbed-cli.sh',GCC_DIR,"venv","bin"]
 OPTIONS = {
     'argv_emulation': True,
     # 'iconfile': 'app.icns', # TODO: add icon file
-    'packages':['mbed','mbed_lstools','mbed_greentea','mbed_host_tests'], # TODO: find out why this is breaking the final build
-    # 'includes': "mbed-cli,mbed-ls,mbed-greentea,mbed-host-tests",
+    'packages':['mbed','mbed_lstools','mbed_greentea','mbed_host_tests',"serial","bs4","jinja2","elftools","fuzzywuzzy"], # TODO: find out why this is breaking the final build
+    'includes': "mbed,mbed_lstools,mbed_greentea,mbed_host_tests",
     'plist': {
         'CFBundleName': APP_NAME,
         'CFBundleDisplayName': APP_NAME,
