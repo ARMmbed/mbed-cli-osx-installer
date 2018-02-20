@@ -5,8 +5,16 @@ MBED_CLI_VERSION="1.4.0"
 MBED_LS_VERSION="1.3.7"
 MBED_GREENTEA_VERSION="1.3.3"
 MBED_HOST_TEST_VERSION="1.3.1"
-
+MBED_GIT_URL="TODO"
+MBED_HG_URL="TODO"
 # ------ DO NOT MODIFY BELOW HERE -----------
+
+# Download and extract git
+# pkgutil --expand <git package>
+# tar xvf Payload
+# copy git files here : todo : 
+
+# TODO: Download and extract Mercurial
 
 # # create Virtual Environment
 # python -m virtualenv ./venv
