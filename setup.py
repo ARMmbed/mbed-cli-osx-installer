@@ -13,11 +13,11 @@ GCC_DIR='gcc'
 #Do not change anything below here
 APP = ['run-mbed-cli.py']
 APP_NAME = "MBED_CLI"
-DATA_FILES = ['run-mbed-cli.sh',GCC_DIR,"venv","bin","git"]
+DATA_FILES = ['run-mbed-cli.sh',GCC_DIR,"bin","git"]
 OPTIONS = {
     'argv_emulation': True,
     'iconfile': './mbed-cli-logo.icns',
-    'packages':['mbed','mbed_lstools','mbed_greentea','mbed_host_tests',"serial","bs4","jinja2","elftools","fuzzywuzzy"], # TODO: find out why this is breaking the final build
+    'packages':['mbed','mbed_lstools','mbed_greentea','mbed_host_tests',"serial","bs4","jinja2","elftools","fuzzywuzzy","mercurial","hgdemandimport"], # TODO: find out why this is breaking the final build
     # 'includes': "mbed,mbed_lstools,mbed_greentea,mbed_host_tests",
     'plist': {
         'CFBundleName': APP_NAME,
