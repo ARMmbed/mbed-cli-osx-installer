@@ -10,8 +10,9 @@ MBED_INSTALLER_VERSION="0.0.1"
 PYTHON_PATH="../MacOS"
 MBED_BINS="bin"
 GIT_PATH="git"
-export GIT_TEMPLATE_DIR="$RESOURCEPATH/$GIT_PATH/share/git-core/templates" # prevent template warning in git
-export GIT_EXEC_PATH="$RESOURCEPATH/$GIT_PATH/libexec/git-core" # force git to use resouces in app insted of in /usr/local
+# export GIT_TEMPLATE_DIR="$RESOURCEPATH/$GIT_PATH/share/git-core/templates" # prevent template warning in git
+# export GIT_EXEC_PATH="$RESOURCEPATH/$GIT_PATH/libexec/git-core" # force git to use resouces in app insted of in /usr/local
+
 
 # CWD=$PWD # works when run-mbed-cli.py calls this scipt directly
 export MBED_INSTALLER_VERSION="$MBED_INSTALLER_VERSION"
@@ -22,6 +23,8 @@ MBED_CLI_PATH="$CWD/$GCC_PATH:$CWD/$PYTHON_PATH:$CWD/$MBED_BINS:$CWD/$GIT_PATH"
 export MBED_CLI_PATH=$MBED_CLI_PATH
 export GCC_ARM_PATH=$"$CWD/$GCC_PATH" # override for mbed-cli, ensure we overridethe user local config
 echo "MBED_CLI_PATH is $MBED_CLI_PATH"
+export PYTHONPATH="$PYTHONPATH:$CWD/lib/python2.7" # work around for some older versions not finding packages
+echo "PYTHONPATH is $PYTHONPATH"
 export PATH="$MBED_CLI_PATH:$PATH"
 echo "PATH is $PATH"
 
