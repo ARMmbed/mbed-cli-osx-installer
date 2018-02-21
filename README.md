@@ -43,4 +43,8 @@ Right, here are some suggestions
 3) Cannot find packages, getting an error like 'UserWarning: No package named mbed-cli' when trying to build. Solution : the site packages found by Py2app does not contain the modules. Try copying things from the Brew site-packages to your system-python site-packages. 
 
 
+--------
+# Planned Updates
+- update `CreateInstaller.sh` to install python packages from pip directly to install directory instead of installing to the computer
+
 
