@@ -10,8 +10,8 @@ MBED_INSTALLER_VERSION="0.0.1"
 PYTHON_PATH="../MacOS"
 MBED_BINS="bin"
 GIT_PATH="git"
-# export GIT_TEMPLATE_DIR="$RESOURCEPATH/$GIT_PATH/share/git-core/templates" # prevent template warning in git
-# export GIT_EXEC_PATH="$RESOURCEPATH/$GIT_PATH/libexec/git-core" # force git to use resouces in app insted of in /usr/local
+export GIT_TEMPLATE_DIR="$RESOURCEPATH/$GIT_PATH/share/git-core/templates" # prevent template warning in git
+export GIT_EXEC_PATH="$RESOURCEPATH/$GIT_PATH/libexec/git-core" # force git to use resouces in app insted of in /usr/local
 
 
 # CWD=$PWD # works when run-mbed-cli.py calls this scipt directly
