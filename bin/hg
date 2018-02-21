@@ -18,7 +18,7 @@ if os.environ.get('HGUNICODEPEDANTRY', False):
     except NameError:
         pass
 
-libdir = '@LIBDIR@'
+libdir = '../../Library/Python/2.7/site-packages/'
 
 if libdir != '@' 'LIBDIR' '@':
     if not os.path.isabs(libdir):
