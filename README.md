@@ -19,7 +19,7 @@ When you run the app a Terminal is opened with modified local session variables 
 Because we want something that "just works" for users in a consistent, reproducable way.
 
 ## But I like installing my tools myself
-See the instructions [here](TODO) for how to install all the tools individually on your system.
+See the instructions [here](https://os.mbed.com/docs/mbed-os/latest/build-tools/install-and-set-up.html) for how to install all the tools individually on your system.
 
 ## Whats next? 
 Go build awesome.  
