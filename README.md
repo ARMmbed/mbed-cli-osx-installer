@@ -1,4 +1,4 @@
-# What is this
+# Mbed CLI: Mac OS X Installer
 This is a single click installer for Mbed CLI on OS X. If you want the installer please see the Releases page for the latest download link. 
 Included in the installer is the latest stable version of all tools required to develop in the Mbed Ecosystem with Mbed CLI. 
 - Python 2.7.x
@@ -19,11 +19,7 @@ When you run the app a Terminal is opened with modified local session variables 
 Because we want something that "just works" for users in a consistent, reproducable way.
 
 ## But I like installing my tools myself
-See the instructions [here](TODO) for how to install all the tools individually on your system.
-
-## Whats next? 
-Go build awesome.  
-
+See the instructions [here](https://os.mbed.com/docs/mbed-os/latest/build-tools/install-and-set-up.html) for how to install all the tools individually on your system.
 
 --------
 
