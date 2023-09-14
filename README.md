@@ -1,3 +1,6 @@
+# DEPRECATION NOTE!
+Please note: This repository is deprecated and is no longer actively maintained.
+
 # What is this
 This is a single click installer for Mbed CLI on OS X. If you want the installer please see the Releases page for the latest download link. 
 Included in the installer is the latest stable version of all tools required to develop in the Mbed Ecosystem with Mbed CLI. 
@@ -47,4 +50,5 @@ Right, here are some suggestions
 # Planned Updates
 - update `CreateInstaller.sh` to install python packages from pip directly to install directory instead of installing to the computer
 
-
+# Known Issues
+* The shell script [`CreateInstaller.sh`](CreateInstaller.sh) contains an incorrect Python package installation directive. `elftools` should be replaced with `pyelftools`.
